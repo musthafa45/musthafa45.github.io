@@ -26,3 +26,18 @@ footer {
   font-size: 14px;
   opacity: 0.8;
 }
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.project-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
