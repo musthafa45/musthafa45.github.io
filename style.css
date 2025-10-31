@@ -6,12 +6,14 @@ body {
   color: #ddd;
 }
 
+/* ---------- Container ---------- */
 .container {
   max-width: 1000px;
   margin: auto;
   padding: 36px 16px;
 }
 
+/* ---------- Card Base ---------- */
 .card {
   background-color: #1e1e1e;
   padding: 24px;
@@ -20,6 +22,34 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
+/* ---------- About Section ---------- */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #333;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+.text-content {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* ---------- Typography ---------- */
 h1 {
   margin: 0 0 16px;
   font-size: 2rem;
@@ -32,6 +62,7 @@ p {
   margin-bottom: 24px;
 }
 
+/* ---------- Social Icons ---------- */
 .icon-row {
   display: flex;
   gap: 12px;
@@ -48,42 +79,17 @@ p {
   transform: scale(1.2);
 }
 
-.fa-linkedin {
-  color: #0077b5;
-}
+.fa-linkedin { color: #0077b5; }
+.fa-github { color: #ffffff; }
+.fa-youtube { color: #ff0000; }
+.fa-itch-io { color: #fa5c5c; }
+.fa-artstation { color: #13AFF0; }
+.fa-envelope { color: #b84dff; }
+.fa-discord { color: #7289da; }
+.fa-globe { color: #1abc9c; }
+.fa-file-download { color: #20c223; }
 
-.fa-github {
-  color: #ffffff;
-}
-
-.fa-youtube {
-  color: #ff0000;
-}
-
-.fa-itch-io {
-  color: #fa5c5c;
-}
-
-.fa-artstation {
-  color: #13AFF0;
-}
-
-.fa-envelope {
-  color: #b84dff;
-}
-
-.fa-discord {
-  color: #7289da;
-}
-
-.fa-globe {
-  color: #1abc9c;
-}
-
-.fa-file-download {
-  color: #20c223;
-}
-
+/* ---------- Projects ---------- */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -97,6 +103,11 @@ p {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
 }
 
 .project-card img {
@@ -131,11 +142,6 @@ p {
   font-weight: bold;
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
-  transition: transform 0.2s ease;
-}
-
 .project-card a:hover {
   text-decoration: underline;
 }
@@ -151,13 +157,8 @@ p {
   color: white;
 }
 
-.status-tag.done {
-  background-color: #27ae60;
-}
-
-.status-tag.progress {
-  background-color: #e67e22;
-}
+.status-tag.done { background-color: #27ae60; }
+.status-tag.progress { background-color: #e67e22; }
 
 .tech-stack span {
   background-color: #333;
@@ -169,13 +170,13 @@ p {
   border-radius: 4px;
 }
 
+/* ---------- Footer ---------- */
 footer {
   text-align: center;
   padding: 20px;
   margin-top: 40px;
   font-size: 0.9rem;
   color: #aaa;
-  font-family: 'Fira Code', monospace;
   border-top: 1px solid #2a2a2a;
   background-color: #121212;
 }
@@ -185,7 +186,7 @@ footer p {
   line-height: 1.6;
 }
 
-
+/* ---------- Responsive ---------- */
 @media (max-width: 768px) {
   h1 {
     font-size: 1.6rem;
@@ -213,6 +214,17 @@ footer p {
 
   .project-card p {
     font-size: 0.9rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
   }
 }
 
@@ -251,34 +263,5 @@ footer p {
 
   .project-card a {
     font-size: 0.9rem;
-  }
-
-  .about-content {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #333;
-}
-
-.text-content {
-  flex: 1;
-}
-
-@media (max-width: 768px) {
-  .about-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .profile-pic {
-    width: 120px;
-    height: 120px;
   }
 }
