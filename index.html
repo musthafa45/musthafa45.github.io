@@ -1,181 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohamed Musthafa</title>
+
+  <!-- Fonts & Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-<div class="card about-card">
-  <div class="about-content">
-    <img src="images/profile.jpg" alt="Mohamed Musthafa" class="profile-pic">
-    <div class="text-content">
-      <h1>Mohamed Musthafa</h1>
-      <p>
-        I’m a Unity developer with 4 years of hands-on experience building games from scratch — from gameplay mechanics to tools and systems. I love designing and coding smooth, responsive experiences, and I pay a lot of attention to game feel and performance. Most of my work lives in the indie space, where I’ve developed games for both mobile and PC, including a few multiplayer projects. I enjoy experimenting, prototyping new ideas, and turning simple concepts into polished, playable worlds.
-      </p>
-      <div class="icon-row">
-        <a href="https://www.linkedin.com/in/mohamed-musthafa-98b347230" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/musthafa45" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://youtube.com/@gamescript-tamil" title="Youtube"><i class="fab fa-youtube"></i></a>
-        <a href="https://musthafa45.itch.io/" title="Itch.io"><i class="fab fa-itch-io"></i></a>
-        <a href="mailto:mohamedmusthafa3679@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://discordapp.com/users/566951093855191040" title="Discord"><i class="fab fa-discord"></i></a>
+  <!-- About Section -->
+  <div class="card about-card">
+    <div class="about-content">
+      <img src="images/profile.jpg" alt="Mohamed Musthafa" class="profile-pic" />
+      <div class="text-content">
+        <h1>Mohamed Musthafa</h1>
+        <p>
+          I’m a Unity developer with 4 years of hands-on experience building games from scratch — from gameplay mechanics to tools and systems. I love designing and coding smooth, responsive experiences, and I pay a lot of attention to game feel and performance. Most of my work lives in the indie space, where I’ve developed games for both mobile and PC, including a few multiplayer projects. I enjoy experimenting, prototyping new ideas, and turning simple concepts into polished, playable worlds.
+        </p>
+        <div class="icon-row">
+          <a href="https://www.linkedin.com/in/mohamed-musthafa-98b347230" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/musthafa45" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://youtube.com/@gamescript-tamil" title="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://musthafa45.itch.io/" title="Itch.io"><i class="fab fa-itch-io"></i></a>
+          <a href="mailto:mohamedmusthafa3679@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://discordapp.com/users/566951093855191040" title="Discord"><i class="fab fa-discord"></i></a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
+  <!-- Projects Section -->
+  <div class="card">
+    <h1>Projects</h1>
+    <div class="projects-grid">
 
-    <!-- Projects Section -->
-    <div class="card">
-      <h1>Projects</h1>
-      <div class="projects-grid">
-
-        <div class="project-card">
-          <img src="images/realm.gif" alt="Project 1">
-          <div class="content">
-            <h3>Wander Ant - Lost trail</h3>
-            <div class="tech-stack">
-              <span>Unity3D</span>
-              <span>C#</span>
-              <span>Shader Graph</span>
-              <span>AdMob</span>
-              <span>Visual-Studio</span>
-            </div>
-            <p>A creative puzzle adventure where players guide a lost ant through traps to find its way home.
-              Built in Unity, it blends logic,
-              timing, and exploration with drag-and-drop path-building mechanics..</p>
-            <div class="status-tag done">Completed</div>
-            <a href="https://musthafa45.github.io/projects/wander-ant/index.html" target="_self">View Project</a>
+      <!-- Wander Ant -->
+      <a href="https://musthafa45.github.io/projects/wander-ant/index.html" class="project-card" target="_self">
+        <img src="images/realm.gif" alt="Wander Ant - Lost Trail">
+        <div class="content">
+          <h3>Wander Ant - Lost Trail</h3>
+          <div class="tech-stack">
+            <span>Unity3D</span><span>C#</span><span>Shader Graph</span><span>AdMob</span>
           </div>
+          <p>A creative puzzle adventure where players guide a lost ant through traps to find its way home.</p>
+          <div class="status-tag done">Completed</div>
         </div>
+      </a>
 
-        <div class="project-card">
-          <img src="images/carbon.png" alt="Project 2">
-          <div class="content">
-            <h3>Carbon Emission Predictor</h3>
-            <div class="tech-stack">
-              <span>Python</span><span>Orange3</span><span>Scikit-learn</span><span>PyQt5</span>
-            </div>
-            <p>A machine learning model using Gradient Boosting to estimate industry-related carbon emissions based on
-              various
-              input features.</p>
-            <div class="status-tag done">Completed</div>
-            <a href="https://github.com/Parven05/Carbon-Predictor">View Project</a>
+      <!-- Carbon Emission Predictor -->
+      <div class="project-card" onclick="window.open('https://github.com/Parven05/Carbon-Predictor', '_blank')">
+        <img src="images/carbon.png" alt="Carbon Emission Predictor">
+        <div class="content">
+          <h3>Carbon Emission Predictor</h3>
+          <div class="tech-stack">
+            <span>Python</span><span>Orange3</span><span>Scikit-learn</span><span>PyQt5</span>
           </div>
+          <p>A machine learning model using Gradient Boosting to estimate industry-related carbon emissions.</p>
+          <div class="status-tag done">Completed</div>
         </div>
-
-        <div class="project-card">
-          <img src="images/2dEngine.gif" alt="Project 3">
-          <div class="content">
-            <h3>2D Physics Engine</h3>
-            <div class="tech-stack">
-              <span>C++</span><span>SFML</span><span>Visual-Studio</span>
-            </div>
-            <p>A custom-built C++ engine using SFML to simulate basic 2D physics interactions like collisions and
-              gravity.</p>
-            <div class="status-tag done">Completed</div>
-            <a href="https://github.com/Parven05/2D-Physics-Engine">View Project</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <img src="images/brownian.gif" alt="Project 4">
-          <div class="content">
-            <h3>Brownian Motion</h3>
-            <div class="tech-stack">
-              <span>C++</span><span>Raylib</span><span>Visual-Studio</span>
-            </div>
-            <p>A C++ simulation using raylib that visually demonstrates random particle movement mimicking Brownian
-              motion.</p>
-            <div class="status-tag done">Completed</div>
-            <a href="https://github.com/Parven05/Brownian-Motion">View Project</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <img src="images/rover.gif" alt="Project 5">
-          <div class="content">
-            <h3>Project Rover</h3>
-            <div class="tech-stack">
-              <span>Unity3D</span><span>C#</span><span>HLSL</span>
-            </div>
-            <p>A Unity scene showcasing cel-shading and stylized rendering techniques using the built-in renderer and
-              custom shaders.</p>
-            <div class="status-tag done">Completed</div>
-            <a href="https://github.com/Parven05/Project-Rover">View Project</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <img src="images/logic.png" alt="Project 6">
-          <div class="content">
-            <h3>LogicSim</h3>
-            <div class="tech-stack">
-              <span>Unity2D</span><span>C#</span>
-            </div>
-            <p>A modified version of a Unity-based digital logic simulator focused on learning circuit design
-              fundamentals.</p>
-            <div class="status-tag done">Completed</div>
-            <a href="https://github.com/Parven05/LogicSim">View Project</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <img src="images/perlin.png" alt="Project 7">
-          <div class="content">
-            <h3>Perlin Terrain</h3>
-            <div class="tech-stack">
-              <span>C++</span><span>Raylib</span><span>Visual-Studio</span>
-            </div>
-            <p>A terrain generation demo using Perlin noise in C++ with Raylib to create randomized 3D landscapes.</p>
-            <div class="status-tag done">Completed</div>
-            <a href="https://github.com/Parven05/Perlin-Terrain">View Project</a>
-          </div>
-        </div>
-
-
-        <div class="project-card">
-          <img src="images/Solar2D.gif" alt="Project 8">
-          <div class="content">
-            <h3>Solar2D</h3>
-            <div class="tech-stack">
-              <span>C++</span><span>SDL3</span><span>CMAKE</span>
-            </div>
-            <p>A C++ solar system simulation using SDL3 and Newtonian gravity to model orbital motion of planets around
-              a fixed sun.</p>
-            <div class="status-tag done">Completed</div>
-            <a href="https://github.com/Parven05/Solar2D">View Project</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <img src="images/blob.gif" alt="Project 9">
-          <div class="content">
-            <h3>Blob Engine</h3>
-            <div class="tech-stack">
-              <span>C++</span><span>SFML</span><span>Visual-Studio</span>
-            </div>
-            <p>A C++ soft-body 2D engine using a spring-mass system to simulate deformable physics-based interactions in
-              games.</p>
-            <div class="status-tag done">Completed</div>
-            <a href="https://github.com/Parven05/BlobEngine">View Project</a>
-          </div>
-        </div>
-
       </div>
-    </div>
 
+      <!-- 2D Physics Engine -->
+      <div class="project-card" onclick="window.open('https://github.com/Parven05/2D-Physics-Engine', '_blank')">
+        <img src="images/2dEngine.gif" alt="2D Physics Engine">
+        <div class="content">
+          <h3>2D Physics Engine</h3>
+          <div class="tech-stack">
+            <span>C++</span><span>SFML</span><span>Visual-Studio</span>
+          </div>
+          <p>A custom-built C++ engine using SFML to simulate 2D physics interactions like collisions and gravity.</p>
+          <div class="status-tag done">Completed</div>
+        </div>
+      </div>
+
+      <!-- Brownian Motion -->
+      <div class="project-card" onclick="window.open('https://github.com/Parven05/Brownian-Motion', '_blank')">
+        <img src="images/brownian.gif" alt="Brownian Motion">
+        <div class="content">
+          <h3>Brownian Motion</h3>
+          <div class="tech-stack">
+            <span>C++</span><span>Raylib</span><span>Visual-Studio</span>
+          </div>
+          <p>A C++ simulation using Raylib that demonstrates random particle movement mimicking Brownian motion.</p>
+          <div class="status-tag done">Completed</div>
+        </div>
+      </div>
+
+      <!-- Project Rover -->
+      <div class="project-card" onclick="window.open('https://github.com/Parven05/Project-Rover', '_blank')">
+        <img src="images/rover.gif" alt="Project Rover">
+        <div class="content">
+          <h3>Project Rover</h3>
+          <div class="tech-stack">
+            <span>Unity3D</span><span>C#</span><span>HLSL</span>
+          </div>
+          <p>A Unity scene showcasing cel-shading and stylized rendering using custom shaders.</p>
+          <div class="status-tag done">Completed</div>
+        </div>
+      </div>
+
+      <!-- LogicSim -->
+      <div class="project-card" onclick="window.open('https://github.com/Parven05/LogicSim', '_blank')">
+        <img src="images/logic.png" alt="LogicSim">
+        <div class="content">
+          <h3>LogicSim</h3>
+          <div class="tech-stack">
+            <span>Unity2D</span><span>C#</span>
+          </div>
+          <p>A Unity-based logic simulator focused on learning circuit design fundamentals.</p>
+          <div class="status-tag done">Completed</div>
+        </div>
+      </div>
+
+      <!-- Perlin Terrain -->
+      <div class="project-card" onclick="window.open('https://github.com/Parven05/Perlin-Terrain', '_blank')">
+        <img src="images/perlin.png" alt="Perlin Terrain">
+        <div class="content">
+          <h3>Perlin Terrain</h3>
+          <div class="tech-stack">
+            <span>C++</span><span>Raylib</span><span>Visual-Studio</span>
+          </div>
+          <p>A terrain generation demo using Perlin noise in C++ with Raylib for randomized 3D landscapes.</p>
+          <div class="status-tag done">Completed</div>
+        </div>
+      </div>
+
+      <!-- Solar2D -->
+      <div class="project-card" onclick="window.open('https://github.com/Parven05/Solar2D', '_blank')">
+        <img src="images/Solar2D.gif" alt="Solar2D">
+        <div class="content">
+          <h3>Solar2D</h3>
+          <div class="tech-stack">
+            <span>C++</span><span>SDL3</span><span>CMAKE</span>
+          </div>
+          <p>A C++ solar system simulation using SDL3 and Newtonian gravity to model orbital motion.</p>
+          <div class="status-tag done">Completed</div>
+        </div>
+      </div>
+
+      <!-- Blob Engine -->
+      <div class="project-card" onclick="window.open('https://github.com/Parven05/BlobEngine', '_blank')">
+        <img src="images/blob.gif" alt="Blob Engine">
+        <div class="content">
+          <h3>Blob Engine</h3>
+          <div class="tech-stack">
+            <span>C++</span><span>SFML</span><span>Visual-Studio</span>
+          </div>
+          <p>A C++ soft-body 2D engine using a spring-mass system to simulate deformable physics interactions.</p>
+          <div class="status-tag done">Completed</div>
+        </div>
+      </div>
+
+    </div>
   </div>
+
+  <footer>
+    <p>© 2025 Musthafa.</p>
+  </footer>
 </body>
-<footer>
-  <p>© 2025 Musthafa.</p>
-</footer>
-
 </html>
