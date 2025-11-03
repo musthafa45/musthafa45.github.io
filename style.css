@@ -107,7 +107,7 @@ p {
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-7px);
 }
 
 .project-card img {
