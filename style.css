@@ -107,9 +107,9 @@ p {
 }
 
 .project-card:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-  background-color: #888888;
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(26, 188, 156, 0.3); /* same as your accent color */
+  background-color: #1a1a1a;
 }
 
 
