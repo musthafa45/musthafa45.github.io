@@ -96,14 +96,16 @@ p {
   gap: 20px;
 }
 
-.project-card { 
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease; 
+.project-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
 }
 
-.project-card:hover { 
-  transform: translateY(-8px); 
-  background-color: #252525; box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); 
+.project-card:hover {
+  transform: translateY(-7px);
+  background-color: #252525;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
+
 
 .project-card img {
   width: 100%;
