@@ -96,15 +96,30 @@ p {
   gap: 20px;
 }
 
+/* Make entire card clickable, but keep normal text style */
 .project-card {
-  display: flex;
-  flex-direction: column;
+  display: block;
   text-decoration: none;
   color: inherit;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
 }
+
 .project-card:hover {
+  transform: translateY(-7px);
+  background-color: #252525;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Reset link style inside the card */
+.project-card * {
+  text-decoration: none !important;
+  color: inherit !important;
   cursor: pointer;
 }
+
 
 
 .project-card img {
