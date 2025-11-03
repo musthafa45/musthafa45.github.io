@@ -103,15 +103,14 @@ p {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
-  transition: transform 0.2s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 20px rgba(26, 188, 156, 0.3); /* same as your accent color */
-  background-color: #1a1a1a;
+  transform: translateY(-7px);
+  background-color: #252525;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
-
 
 .project-card img {
   width: 100%;
