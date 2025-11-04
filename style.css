@@ -333,4 +333,15 @@ footer p {
   .project-card a {
     font-size: 0.9rem;
   }
+
+  .project-card {
+    background-color: #1a1a1a; /* slightly darker than bg (#121212) */
+    box-shadow: 0 4px 15px rgba(26, 188, 156, 0.3); /* subtle neon glow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .project-card:hover {
+    box-shadow: 0 6px 20px rgba(26, 188, 156, 0.6); /* stronger on hover/tap */
+    transform: translateY(-3px);
+  }
 }
