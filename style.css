@@ -97,16 +97,77 @@ p {
 }
 
 .project-card {
-  transition: transform 0.25s ease, 
-  box-shadow 0.25s ease,
-  background-color 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
 }
+
 
 .project-card:hover {
   transform: translateY(-7px);
   background-color: #252525;
-  box-shadow: 0 0 20px rgba(26, 188, 156, 0.5); /* <-- green glow */
+  box-shadow: 0 0 20px rgba(26, 188, 156, 0.5);
 }
+
+.project-thumb {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  background-color: #000;
+  transition: opacity 0.3s ease;
+  opacity: 1; /* show poster by default */
+}
+
+/* ---------- Project Card & Video Fix ---------- */
+.thumb-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio default, adjusts container height */
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.project-thumb,
+.project-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+
+/* Thumbnail always fills container */
+.project-thumb {
+  object-fit: cover;  /* fills container, crops if needed */
+  z-index: 1;
+  opacity: 1;
+}
+
+/* Video keeps its natural ratio and appears on hover */
+.project-video {
+  object-fit: contain; /* keeps aspect ratio, may show black bars */
+  z-index: 2;
+  opacity: 0;
+}
+
+.thumb-wrapper:hover .project-video {
+  opacity: 1;
+}
+
+.thumb-wrapper:hover .project-thumb {
+  opacity: 0.6; /* optional fade effect when video appears */
+}
+
+
 
 .project-card img {
   width: 100%;
@@ -116,10 +177,21 @@ p {
 
 .project-card .content {
   padding: 16px;
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+
+
+.project-card .content p {
+  flex-grow: 1; /* Fills space to push bottom section down */
+  margin-bottom: 12px;
+}
+
+.project-card .bottom {
+  margin-top: auto; /* keeps it at the bottom */
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* <-- add spacing between status tag and link */
 }
 
 .project-card h3 {
@@ -134,7 +206,6 @@ p {
 }
 
 .project-card a {
-  margin-top: 12px;
   color: #1abc9c;
   text-decoration: none;
   font-weight: bold;
