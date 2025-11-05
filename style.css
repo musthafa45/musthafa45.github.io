@@ -88,6 +88,8 @@ p {
 .fa-discord { color: #7289da; }
 .fa-globe { color: #1abc9c; }
 .fa-file-download { color: #20c223; }
+.fa-google-play { color: #ffffff; }
+
 
 /* ---------- Projects ---------- */
 .projects-grid {
@@ -281,18 +283,17 @@ footer p {
   margin: 40px auto;
 }
 
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
 .carousel-track {
   display: flex;
   gap: 20px;
   overflow-x: auto;
+  scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  scrollbar-width: none;
-  padding-left: 0;           /* remove extra padding */
-  scroll-snap-type: x mandatory; /* enable snapping */
-}
-
-.carousel-track::-webkit-scrollbar {
-  display: none;
+  padding-left: 0;
 }
 
 /* Each item (video or image) — now 1080 wide */
@@ -350,6 +351,13 @@ footer p {
   border-radius: 16px;
   object-fit: cover;
 }
+.carousel-item img,
+.video-item iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* prevents cropping */
+}
+
 
 
 /* Arrows */
@@ -387,6 +395,10 @@ footer p {
   .arrow {
     font-size: 2rem;
   }
+  .carousel-track {
+    gap: 12px;
+    padding: 0 8px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -395,8 +407,6 @@ footer p {
     padding: 6px 10px;
   }
 }
-
-
 
 /* ---------- Responsive ---------- */
 @media (max-width: 768px) {
