@@ -310,6 +310,21 @@ footer p {
   scroll-snap-align: start;  /* snap each item to start */
 }
 
+.carousel-item,
+.video-item {
+  flex: 0 0 100%;        /* each item takes full viewport width */
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;  /* keeps 16:9 ratio */
+  border-radius: 16px;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
 /* Screenshots */
 .carousel-item img {
   width: 100%;
@@ -335,6 +350,7 @@ footer p {
   border-radius: 16px;
   object-fit: cover;
 }
+
 
 /* Arrows */
 .arrow {
