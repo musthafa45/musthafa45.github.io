@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wander Ant | Mohamed Musthafa</title>
+
+  <!-- Styles -->
   <link rel="stylesheet" href="../../style.css">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -12,49 +14,55 @@
 
 <body>
   <div class="container">
-    <a href="../../index.html" style="color:#1abc9c; text-decoration:none; font-weight:700; font-size:1.2rem;">← Back to Portfolio</a>
 
+    <!-- Back Link -->
+    <a href="../../index.html" style="color:#1abc9c; text-decoration:none; font-weight:700; font-size:1.2rem;">
+      ← Back to Portfolio
+    </a>
+
+    <!-- Main Card -->
     <div class="card">
       <h1>Wander Ant</h1>
       <div class="status-tag done">Released</div>
 
-      <!-- ✅ Fixed image path -->
-      <img src="images/preview.png" alt="Wander Ant Screenshot"
-        style="width:100%; border-radius:10px; margin:20px 0;">
+      <!-- Preview Image -->
+      <img src="images/preview.png" alt="Wander Ant Screenshot" style="width:100%; border-radius:10px; margin:20px 0;">
 
+      <!-- Game Description -->
       <p>
-        <strong>Wander Ant</strong> is a creative puzzle adventure where players guide a lost ant through tricky traps to reach home.
-        The gameplay blends logic, timing, and exploration — all crafted with care using Unity. 
+        <strong>Wander Ant</strong> is a creative puzzle adventure where players guide a lost ant through tricky traps
+        to reach home. The gameplay blends logic, timing, and exploration — all crafted with care using Unity.
         The ant navigates through laser traps, moving tiles, and secret portals while players build paths using drag-and-drop mechanics.
       </p>
-<!-- 🎮 Trailer + Screenshot Carousel -->
-<div class="screenshot-carousel">
-  <button class="arrow left">&#10094;</button>
 
-  <div class="carousel-track">
-    <!-- YouTube Trailer as first item -->
-    <div class="carousel-item video-item">
-  <iframe
-  id="yt-trailer"
-  src="https://www.youtube.com/embed/kP84W3x-uoE?enablejsapi=1&origin=http://localhost"
-  title="Wander Ant Trailer"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen>
-</iframe>
-</div>
+      <!-- 🎮 Trailer + Screenshot Carousel -->
+      <div class="screenshot-carousel">
+        <button class="arrow left">&#10094;</button>
 
+        <div class="carousel-track">
+          <!-- YouTube Trailer -->
+          <div class="carousel-item video-item">
+            <iframe
+              id="yt-trailer"
+              src="https://www.youtube.com/embed/kP84W3x-uoE?enablejsapi=1&origin=http://localhost"
+              title="Wander Ant Trailer"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
 
-    <!-- Screenshots -->
-    <div class="carousel-item"><img src="images/screenshot1.jpg" alt="Screenshot 1"></div>
-    <div class="carousel-item"><img src="images/screenshot2.jpg" alt="Screenshot 2"></div>
-    <div class="carousel-item"><img src="images/screenshot3.jpg" alt="Screenshot 3"></div>
-    <div class="carousel-item"><img src="images/screenshot4.jpg" alt="Screenshot 4"></div>
-  </div>
+          <!-- Screenshots -->
+          <div class="carousel-item"><img src="images/screenshot1.jpg" alt="Screenshot 1"></div>
+          <div class="carousel-item"><img src="images/screenshot2.jpg" alt="Screenshot 2"></div>
+          <div class="carousel-item"><img src="images/screenshot3.jpg" alt="Screenshot 3"></div>
+          <div class="carousel-item"><img src="images/screenshot4.jpg" alt="Screenshot 4"></div>
+        </div>
 
-  <button class="arrow right">&#10095;</button>
-</div>
+        <button class="arrow right">&#10095;</button>
+      </div>
 
+      <!-- Core Features -->
       <h3>🧠 Core Features</h3>
       <ul style="line-height:1.8;">
         <li>Unique pipe-connection puzzles with real-time ant movement</li>
@@ -64,6 +72,7 @@
         <li>Ads designed for minimal interruption (extra pipes, energy rewards)</li>
       </ul>
 
+      <!-- Technologies Used -->
       <h3>🧩 Technologies Used</h3>
       <div class="tech-stack">
         <span>Unity</span>
@@ -73,54 +82,56 @@
         <span>AdMob</span>
       </div>
 
+      <!-- About the Game -->
       <h3>📜 About the Game</h3>
       <p>
-        The game’s core message follows a small ant who lost its home and is trying to find its way back, representing persistence and creativity.
-        After gathering feedback from friends, family, and players, the game was refined and released — reaching thousands of downloads with positive reviews.
+        The game follows a small ant who lost its home and is trying to find its way back, representing persistence and creativity.
+        After gathering feedback from friends, family, and players, the game was refined and released — reaching thousands
+        of downloads with positive reviews.
       </p>
 
+      <!-- Availability -->
       <h3>🎮 Availability</h3>
-      <p>
-        Available on Google Play and itch.io.
-      </p>
+      <p>Available on Google Play and itch.io.</p>
 
+      <!-- Links -->
       <div class="icon-row">
         <a href="https://musthafa45.itch.io/ant-adventures" title="Itch.io"><i class="fab fa-itch-io"></i></a>
         <a href="https://github.com/musthafa45" title="Private Source"><i class="fab fa-github"></i></a>
-        <a href="https://play.google.com/store/apps/details?id=com.dreamdoggames.antadventures" title="Google Play"><i class="fab fa-google-play"></i>
-</a>
-
+        <a href="https://play.google.com/store/apps/details?id=com.dreamdoggames.antadventures" title="Google Play"><i class="fab fa-google-play"></i></a>
       </div>
     </div>
 
+    <!-- Footer -->
     <footer>
       <p>© 2025 Mohamed Musthafa | Wander Ant</p>
     </footer>
   </div>
-<script>
-  // Carousel
-  const carousel = document.querySelector('.carousel-track');
-  const items = document.querySelectorAll('.carousel-item');
-  let currentIndex = 0;
 
-  const prevBtn = document.querySelector('.arrow.left');
-  const nextBtn = document.querySelector('.arrow.right');
+  <!-- Carousel Script -->
+  <script>
+    const carousel = document.querySelector('.carousel-track');
+    const items = document.querySelectorAll('.carousel-item');
+    let currentIndex = 0;
 
-  function scrollToIndex(index) {
-    const scrollPos = items[index].offsetLeft;
-    carousel.scrollTo({ left: scrollPos, behavior: 'smooth' });
-  }
+    const prevBtn = document.querySelector('.arrow.left');
+    const nextBtn = document.querySelector('.arrow.right');
 
-  nextBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % items.length; // loop to start
-    scrollToIndex(currentIndex);
-  });
+    function scrollToIndex(index) {
+      const scrollPos = items[index].offsetLeft;
+      carousel.scrollTo({ left: scrollPos, behavior: 'smooth' });
+    }
 
-  prevBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + items.length) % items.length; // loop to end
-    scrollToIndex(currentIndex);
-  });
-</script>
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % items.length;
+      scrollToIndex(currentIndex);
+    });
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + items.length) % items.length;
+      scrollToIndex(currentIndex);
+    });
+  </script>
 
 </body>
 </html>
