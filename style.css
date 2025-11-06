@@ -100,7 +100,7 @@ p {
 .fa-file-download { color: #20c223; }
 
 .gplay-badge {
-  height: 45px;
+  height: 35px;
   transition: transform 0.2s ease;
 }
 
@@ -116,7 +116,7 @@ p {
 
 .itch-badge,
 .gplay-badge {
-  height: 45px;
+  height: 35px;
   transition: transform 0.2s ease;
 }
 
