@@ -74,7 +74,8 @@ p {
 /* ---------- Social Icons ---------- */
 .icon-row {
   display: flex;
-  gap: 12px;
+  gap: 20px;
+  align-items: center;
   flex-wrap: wrap;
   margin-top: 12px;
 }
@@ -85,7 +86,7 @@ p {
 }
 
 .icon-row a:hover {
-  transform: scale(1.2);
+  transform: scale(1.5);
 }
 
 /* Social Icon Colors */
@@ -108,11 +109,6 @@ p {
   transform: scale(1.05);
 }
 
-.icon-row {
-  display: flex;
-  align-items: center;
-  gap: 23px;
-}
 
 .itch-badge,
 .gplay-badge {
