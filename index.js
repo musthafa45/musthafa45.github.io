@@ -19,3 +19,30 @@ projectCards.forEach(card => {
     }
   });
 });
+
+
+const items = document.querySelectorAll('.menu-item');
+let currentIndex = 0;
+
+const leftBtn = document.getElementById('leftBtn');
+const rightBtn = document.getElementById('rightBtn');
+const startBtn = document.getElementById('startBtn');
+
+function updateSelection() {
+  items.forEach((item, i) => item.classList.toggle('selected', i === currentIndex));
+}
+
+leftBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + items.length) % items.length;
+  updateSelection();
+});
+
+rightBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % items.length;
+  updateSelection();
+});
+
+startBtn.addEventListener('click', () => {
+  const link = items[currentIndex].dataset.link;
+  window.open(link, '_blank'); // opens the selected item
+});

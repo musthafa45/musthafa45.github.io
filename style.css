@@ -58,13 +58,25 @@ p {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #333;
+  border: 1px solid transparent;
+  background: linear-gradient(45deg, #ff0000, #00ff99, #0066ff, #ff00ff);
+  background-size: 400% 400%;
+  animation: rgbGlow 5s ease infinite;
+  padding: 2px;
   transition: transform 0.3s ease;
 }
 
 .profile-pic:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
 }
+
+@keyframes rgbGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 
 .text-content {
   flex: 1;
@@ -72,22 +84,81 @@ p {
 }
 
 /* ---------- Social Icons ---------- */
-.icon-row {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 12px;
+
+.game-menu {
+  text-align: center;
+  margin-top: 30px;
 }
 
+.icon-row {
+  display: flex;
+  gap: 16px; /* smaller gap */
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  margin-bottom: 15px;
+}
+
+.menu-item {
+  font-size: 1.5rem; /* smaller than 2rem */
+  color: #eee;
+  padding: 8px;       /* less padding */
+  border-radius: 8px; /* smaller corners */
+  transition: transform 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+.menu-item.selected {
+  transform: scale(1.25); /* smaller scale effect */
+  color: #1abc9c;
+  box-shadow: 0 0 12px #1abc9c;
+}
+
+/* Arrow Buttons & Start Button - consistent style */
+.arrow-btn,
+.start-btn {
+  font-size: 1.2rem;           /* bigger text / symbols */
+  padding: 7px 14px;          /* larger clickable area */
+  font-family: 'Fira Code', monospace;
+  border: 2px solid #1abc9c;
+  border-radius: 4px;
+  background: #272626;
+  color: #1abc9c;
+  letter-spacing: 1px;
+  box-shadow: 0 0 0 2px #1abc9c, 0 4px 0 #0e8f7f; /* 3D effect */
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+/* Hover Effect */
+.arrow-btn:hover,
+.start-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 0 2px #1abc9c, 0 6px 0 #0e8f7f;
+  background: #111;
+  color: #fff;
+}
+
+/* Active / Pressed */
+.arrow-btn:active,
+.start-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 0 0 2px #1abc9c, 0 2px 0 #0e8f7f;
+  background: #0e8f7f;
+  color: #111;
+}
+
+/* Optional: remove hover scaling on <a> if using menu-item already */
 .icon-row a {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   transition: transform 0.2s;
 }
 
 .icon-row a:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
+
 
 /* Social Icon Colors */
 .fa-linkedin { color: #0077b5; }
