@@ -87,29 +87,29 @@ p {
 
 .game-menu {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .icon-row {
   display: flex;
-  gap: 16px; /* smaller gap */
+  gap: 13px; /* smaller gap */
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 12px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .menu-item {
   font-size: 1.1rem; /* smaller than 2rem */
   color: #eee;
-  padding: 8px;       /* less padding */
-  border-radius: 8px; /* smaller corners */
+  padding: 7px;       /* less padding */
+  border-radius: 3px; /* smaller corners */
   transition: transform 0.3s, box-shadow 0.3s, color 0.3s;
 }
 
 .menu-item.selected {
-  transform: scale(1.25); /* smaller scale effect */
+  transform: scale(1.2); /* smaller scale effect */
   color: #1abc9c;
   box-shadow: 0 0 12px #1abc9c;
 }
@@ -117,7 +117,7 @@ p {
 /* Arrow Buttons & Start Button - consistent style */
 .arrow-btn,
 .start-btn {
-  font-size: 1.2rem;           /* bigger text / symbols */
+  font-size: 1.1rem;           /* bigger text / symbols */
   padding: 7px 14px;          /* larger clickable area */
   font-family: 'Fira Code', monospace;
   border: 2px solid #1abc9c;
@@ -151,7 +151,7 @@ p {
 
 /* Optional: remove hover scaling on <a> if using menu-item already */
 .icon-row a {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   transition: transform 0.2s;
 }
 
