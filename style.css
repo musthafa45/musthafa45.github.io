@@ -101,17 +101,11 @@ p {
 }
 
 .menu-item {
-  font-size: 1.1rem; /* smaller than 2rem */
+  font-size: 1.6rem; /* smaller than 2rem */
   color: #eee;
   padding: 7px;       /* less padding */
   border-radius: 3px; /* smaller corners */
   transition: transform 0.3s, box-shadow 0.3s, color 0.3s;
-}
-
-.menu-item.selected {
-  transform: scale(1.2); /* smaller scale effect */
-  color: #1abc9c;
-  box-shadow: 0 0 12px #1abc9c;
 }
 
 /* Arrow Buttons & Start Button - consistent style */
@@ -147,6 +141,19 @@ p {
   box-shadow: 0 0 0 2px #1abc9c, 0 2px 0 #0e8f7f;
   background: #0e8f7f;
   color: #111;
+}
+
+.pointer-triangle {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 12px solid #1abc9c; /* now points down */
+  position: absolute;
+  top: -6px; /* keep it above icons if you want */
+  left: 0;
+  transition: left 0.2s ease;
+  z-index: 10;
 }
 
 /* Optional: remove hover scaling on <a> if using menu-item already */
@@ -468,6 +475,11 @@ footer {
   .project-card img { height: 140px; }
   .project-card h3 { font-size: 1rem; }
   .project-card p { font-size: 0.9rem; }
+
+  .arrow {
+    font-size: 2.5rem;  /* slightly bigger */
+    padding: 14px;      /* larger tap target for mobile */
+  }
 }
 
 @media (max-width: 480px) {

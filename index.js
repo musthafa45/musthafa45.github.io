@@ -20,29 +20,40 @@ projectCards.forEach(card => {
   });
 });
 
-
 const items = document.querySelectorAll('.menu-item');
 let currentIndex = 0;
 
+const pointer = document.querySelector('.pointer-triangle');
 const leftBtn = document.getElementById('leftBtn');
 const rightBtn = document.getElementById('rightBtn');
 const startBtn = document.getElementById('startBtn');
 
-function updateSelection() {
-  items.forEach((item, i) => item.classList.toggle('selected', i === currentIndex));
+function updatePointer() {
+  const currentItem = items[currentIndex];
+  const itemRect = currentItem.getBoundingClientRect();
+  const parentRect = currentItem.parentElement.getBoundingClientRect();
+
+  // Position pointer horizontally centered above the current item
+  pointer.style.left = `${itemRect.left - parentRect.left + itemRect.width / 2 - 10}px`;
 }
 
 leftBtn.addEventListener('click', () => {
   currentIndex = (currentIndex - 1 + items.length) % items.length;
-  updateSelection();
+  updatePointer();
 });
 
 rightBtn.addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % items.length;
-  updateSelection();
+  updatePointer();
 });
 
 startBtn.addEventListener('click', () => {
   const link = items[currentIndex].dataset.link;
-  window.open(link, '_blank'); // opens the selected item
+  window.open(link, '_blank');
 });
+
+// Initialize pointer on page load
+window.addEventListener('load', updatePointer);
+window.addEventListener('resize', updatePointer);
+
+
