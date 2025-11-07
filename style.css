@@ -101,7 +101,7 @@ p {
 }
 
 .menu-item {
-  font-size: 1.5rem; /* smaller than 2rem */
+  font-size: 1.1rem; /* smaller than 2rem */
   color: #eee;
   padding: 8px;       /* less padding */
   border-radius: 8px; /* smaller corners */
