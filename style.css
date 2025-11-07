@@ -86,14 +86,14 @@ p {
 /* ---------- Social Icons ---------- */
 
 .game-menu {
-  text-align: center;
+  /* text-align: center; */
   margin-top: 20px;
 }
 
 .icon-row {
   display: flex;
   gap: 10px; /* smaller gap */
-  align-items: center;
+  /* align-items: center; */
   /* justify-content: center; */
   flex-wrap: wrap;
   margin-top: 12px;
