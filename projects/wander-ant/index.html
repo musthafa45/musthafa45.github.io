@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wander Ant | Mohamed Musthafa</title>
 
-  <!-- Styles -->
+  <!-- Styles & Fonts -->
   <link rel="stylesheet" href="../../style.css">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -15,32 +14,32 @@
 <body>
   <div class="container">
 
-    <!-- Back Link -->
-    <a href="../../index.html" style="color:#1abc9c; text-decoration:none; font-weight:700; font-size:1.2rem;">
+    <!-- 🔙 Back Link -->
+    <a href="../../index.html" class="back-link">
       ← Back to Portfolio
     </a>
 
-    <!-- Main Card -->
+    <!-- 🧩 Main Card -->
     <div class="card">
       <h1>Wander Ant</h1>
       <div class="status-tag done">Released</div>
 
-      <!-- Preview Image -->
-      <img src="images/preview.png" alt="Wander Ant Screenshot" style="width:100%; border-radius:10px; margin:20px 0;">
+      <!-- 🖼️ Preview Image -->
+      <img src="images/preview.png" alt="Wander Ant Screenshot" class="preview-image">
 
-      <!-- Game Description -->
+      <!-- 📝 Game Description -->
       <p>
-        <strong>Wander Ant</strong> is a creative puzzle adventure where players guide a lost ant through tricky traps
-        to reach home. The gameplay blends logic, timing, and exploration — all crafted with care using Unity.
+        <strong>Wander Ant</strong> is a creative puzzle adventure where players guide a lost ant through tricky traps to reach home.
+        The gameplay blends logic, timing, and exploration — all crafted with care using Unity.
         The ant navigates through laser traps, moving tiles, and secret portals while players build paths using drag-and-drop mechanics.
       </p>
 
-      <!-- 🎮 Trailer + Screenshot Carousel -->
+      <!-- 🎥 Trailer + Screenshot Carousel -->
       <div class="screenshot-carousel">
         <button class="arrow left">&#10094;</button>
 
         <div class="carousel-track">
-          <!-- YouTube Trailer -->
+          <!-- 🎬 YouTube Trailer -->
           <div class="carousel-item video-item">
             <iframe
               id="yt-trailer"
@@ -52,7 +51,7 @@
             </iframe>
           </div>
 
-          <!-- Screenshots -->
+          <!-- 🖼️ Screenshots -->
           <div class="carousel-item"><img src="images/screenshot1.jpg" alt="Screenshot 1"></div>
           <div class="carousel-item"><img src="images/screenshot2.jpg" alt="Screenshot 2"></div>
           <div class="carousel-item"><img src="images/screenshot3.jpg" alt="Screenshot 3"></div>
@@ -62,17 +61,19 @@
         <button class="arrow right">&#10095;</button>
       </div>
 
-      <!-- Core Features -->
+      <!-- 🧠 Core Features -->
       <h3>🧠 Core Features</h3>
-      <ul style="line-height:1.8;">
+      <ul class="feature-list">
         <li>Unique pipe-connection puzzles with real-time ant movement</li>
         <li>Visually clean cartoonish style with black outlines</li>
         <li>Smart level design encouraging creative thinking</li>
         <li>Playable on mobile</li>
         <li>Ads designed for minimal interruption (extra pipes, energy rewards)</li>
+        <li>Power-ups and traps</li>
+        <li>Level-based difficulty progression</li>
       </ul>
 
-      <!-- Technologies Used -->
+      <!-- ⚙️ Technologies Used -->
       <h3>🧩 Technologies Used</h3>
       <div class="tech-stack">
         <span>Unity</span>
@@ -82,50 +83,57 @@
         <span>AdMob</span>
       </div>
 
-      <!-- About the Game -->
+      <!-- 📜 About the Game -->
       <h3>📜 About the Game</h3>
       <p>
         The game follows a small ant who lost its home and is trying to find its way back, representing persistence and creativity.
-        After gathering feedback from friends, family, and players, the game was refined and released — reaching thousands
-        of downloads with positive reviews.
+        After gathering feedback from friends, family, and players, the game was refined and released — reaching thousands of downloads with positive reviews.
       </p>
 
-      <!-- Availability -->
+      <!-- 💡 Challenges -->
+      <h3>💡 Challenges</h3>
+      <ul class="challenge-list">
+        <li>Developed a precise grid-based snap system for seamless drag-and-drop gameplay.</li>
+        <li>Resolved complex overlapping and alignment issues during path creation.</li>
+        <li>Implemented procedural object spawning to enhance replayability and variety.</li>
+        <li>Created a custom light collision detection system for dynamic interactions.</li>
+        <li>Built laser effects using Shader Graph for optimized visual performance.</li>
+        <li>Optimized physics calculations to maintain a consistent 60 FPS experience.</li>
+        <li>Designed and animated UI elements for smooth and engaging transitions.</li>
+        <li>Composed and integrated sound effects that perfectly match the game’s tone and atmosphere.</li>
+      </ul>
+
+      <!-- 🕹️ Availability -->
       <h3>🎮 Availability</h3>
-      <p>Available on Google Play and itch.io.</p>
+      <p>Available on <strong>Google Play</strong> and <strong>itch.io</strong>.</p>
 
-      <!-- Links -->
+      <!-- 🔗 Links -->
       <div class="icon-row">
- <a href="https://musthafa45.itch.io/ant-adventures" 
-     title="Play on Itch.io" target="_blank">
-    <img src="https://static.itch.io/images/badge-color.svg" 
-         alt="Play on Itch.io" class="itch-badge">
-  </a>
+        <a href="https://musthafa45.itch.io/ant-adventures" title="Play on Itch.io" target="_blank">
+          <img src="https://static.itch.io/images/badge-color.svg" alt="Play on Itch.io" class="itch-badge">
+        </a>
 
-
-  <a href="https://play.google.com/store/apps/details?id=com.dreamdoggames.antadventures" 
-     title="Google Play" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
-         alt="Get it on Google Play" class="gplay-badge">
-  </a>
-</div>
-
+        <a href="https://play.google.com/store/apps/details?id=com.dreamdoggames.antadventures"
+           title="Google Play" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+               alt="Get it on Google Play" class="gplay-badge">
+        </a>
+      </div>
     </div>
 
-    <!-- Footer -->
+    <!-- 🧾 Footer -->
     <footer>
       <p>© 2025 Mohamed Musthafa | Wander Ant</p>
     </footer>
   </div>
 
-  <!-- Carousel Script -->
+  <!-- 🎞️ Carousel Script -->
   <script>
     const carousel = document.querySelector('.carousel-track');
     const items = document.querySelectorAll('.carousel-item');
-    let currentIndex = 0;
-
     const prevBtn = document.querySelector('.arrow.left');
     const nextBtn = document.querySelector('.arrow.right');
+    let currentIndex = 0;
 
     function scrollToIndex(index) {
       const scrollPos = items[index].offsetLeft;
@@ -142,6 +150,5 @@
       scrollToIndex(currentIndex);
     });
   </script>
-
 </body>
 </html>
