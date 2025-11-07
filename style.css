@@ -92,7 +92,7 @@ p {
 
 .icon-row {
   display: flex;
-  gap: 13px; /* smaller gap */
+  gap: 10px; /* smaller gap */
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
