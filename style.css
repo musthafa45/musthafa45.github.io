@@ -578,7 +578,7 @@ footer {
   .project-card p { font-size: 0.85rem; }
   .project-card a { font-size: 0.9rem; }
 
-  .project-card {
+  /* .project-card {
     background-color: #1a1a1a;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
@@ -586,5 +586,5 @@ footer {
   .project-card:hover {
     box-shadow: 0 6px 20px rgba(26, 188, 156, 0.6);
     transform: translateY(-3px);
-  }
+  } */
 }
