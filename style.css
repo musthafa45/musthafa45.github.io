@@ -99,7 +99,7 @@ p {
   scrollbar-width: none;
   -ms-overflow-style: none;
 
-  padding: 0 16px; /* ✅ adds equal left & right spacing */
+  padding: 0 4px; /* ✅ adds equal left & right spacing */
   box-sizing: border-box; /* ensures padding doesn’t break layout */
 }
 
