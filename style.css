@@ -134,40 +134,72 @@ p {
   transform: scale(1.2);
 }
 
-/* Arrow Buttons & Start Button - Grey/White Theme */
+/* Base style same as Start button */
 .arrow-btn,
 .start-btn {
+  width: 60px;                 /* fixed width for arrows */
+  height: 40px;                /* same height as Start button */
   font-size: 1.1rem;           
-  padding: 7px 14px;          
   font-family: 'Fira Code', monospace;
-  border: 2px solid #ccc;          /* light grey border */
+  border: 2px solid #ccc;
   border-radius: 4px;
-  background: #333;                /* dark grey background */
-  color: #eee;                     /* text color */
+  background: #333;
+  color: #eee;
   letter-spacing: 1px;
-  box-shadow: 0 0 0 2px #ccc, 0 4px 0 #555; /* 3D effect: top border light, bottom shadow darker */
+  box-shadow: 0 0 0 2px #ccc, 0 4px 0 #555;
   cursor: pointer;
   text-transform: uppercase;
   transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* remove default padding */
 }
 
-/* Hover Effect */
+/* Hover */
 .arrow-btn:hover,
 .start-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 0 0 2px #ccc, 0 6px 0 #555;
-  background: #222;                /* slightly darker on hover */
+  background: #222;
   color: #fff;
 }
 
-/* Active / Pressed */
+/* Active */
 .arrow-btn:active,
 .start-btn:active {
   transform: translateY(2px);
   box-shadow: 0 0 0 2px #ccc, 0 2px 0 #555;
-  background: #555;                /* mid-grey when pressed */
-  color: #222;                     /* darker text on press */
+  background: #555;
+  color: #222;
 }
+
+/* Left / Right triangle */
+.arrow-btn.left::before,
+.arrow-btn.right::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+.arrow-btn.left::before {
+  border-right: 12px solid #eee; /* triangle pointing left */
+}
+
+.arrow-btn.right::before {
+  border-left: 12px solid #eee; /* triangle pointing right */
+}
+
+.button-row {
+  display: flex;
+  gap: 12px;          /* spacing between buttons */
+  align-items: center; /* vertical alignment */
+  justify-content: center; /* optional: center horizontally */
+}
+
 
 /* Social Icon Colors */
 .fa-linkedin { color: #0077b5; }
@@ -200,36 +232,36 @@ p {
   transform: scale(1.05);
 }
 
-/* Tools Section - Compact Version */
+/* Tools Section - Ultra Compact */
 .tools-section {
   background-color: #1e1e1e;
   color: #fff;
   text-align: center;
-  padding: 20px 12px;       /* reduced padding */
-  border-radius: 12px;      /* slightly smaller corners */
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15); /* lighter shadow */
-  margin-bottom: 20px;
+  padding: 12px 8px;       /* very small padding */
+  border-radius: 8px;      /* smaller corners */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  margin-bottom: 16px;
 }
 
 .tools-section h1 {
-  font-size: 1.2rem;        /* smaller heading */
-  margin-bottom: 16px;
+  font-size: 1rem;         /* small heading */
+  margin-bottom: 12px;
   font-weight: 400;
 }
 
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* smaller min-width */
-  gap: 6px;                  /* tighter gap */
-  justify-content: center;    /* center grid items */
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* smaller min-width */
+  gap: 4px;                 /* tighter gap */
+  justify-content: center;
 }
 
 .tool-item {
   background: #ffffff15;
   border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 10px;        /* slightly smaller corners */
-  padding: 6px 4px;           /* reduced padding */
-  font-size: 0.8rem;          /* smaller text */
+  border-radius: 8px;       /* smaller corners */
+  padding: 4px 2px;         /* very compact padding */
+  font-size: 0.7rem;        /* smaller text */
   font-weight: 500;
   color: #fff;
   transition: all 0.2s ease;
@@ -239,13 +271,14 @@ p {
 }
 
 .tool-item i {
-  margin-right: 4px;           /* smaller icon spacing */
+  margin-right: 2px;        /* minimal icon spacing */
+  font-size: 0.8rem;        /* smaller icon */
   color: #fff;
 }
 
 .tool-item:hover {
   background: #ffffff25;
-  transform: translateY(-2px); /* smaller hover movement */
+  transform: translateY(-1px); /* minimal hover movement */
 }
 
 /* ---------- Projects Grid ---------- */
@@ -382,35 +415,35 @@ p {
   opacity: 0.6;
 }
 
-/* ---------- Languages Section (Compact) ---------- */
+/* ---------- Languages Section - Ultra Compact ---------- */
 #languages {
-  margin-top: 40px;          /* reduced margin */
+  margin-top: 20px;           /* smaller margin */
   text-align: left;
 }
 
 .languages-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;                  /* tighter spacing */
-  justify-content: center;    /* center items for smaller width */
+  gap: 6px;                   /* tighter spacing */
+  justify-content: center;     /* center items */
 }
 
 .language-item {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 6px 8px;           /* reduced padding */
-  border-radius: 6px;
-  font-size: 0.85rem;          /* smaller text */
+  padding: 4px 6px;           /* very small padding */
+  border-radius: 4px;          /* smaller corners */
+  font-size: 0.75rem;          /* smaller text */
   color: #eee;
   display: flex;
   justify-content: space-between;
-  min-width: 120px;            /* reduced min-width */
+  min-width: 100px;            /* reduced min-width */
   transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
 }
 
 .language-item:hover {
-  transform: scale(1.03);      /* smaller hover scale */
-  box-shadow: 0 0 6px rgba(255, 255, 255, 0.15); /* lighter glow */
+  transform: scale(1.02);      /* subtle hover scale */
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.15); /* subtle glow */
   background-color: rgba(255, 255, 255, 0.08);
 }
 
@@ -423,6 +456,7 @@ p {
   opacity: 0.8;
   font-style: italic;
   color: #ccc;
+  font-size: 0.7rem;            /* smaller secondary text */
 }
 
 /* ---------- Footer ---------- */
@@ -579,14 +613,4 @@ footer {
   .project-card h3 { font-size: 0.95rem; }
   .project-card p { font-size: 0.85rem; }
   .project-card a { font-size: 0.9rem; }
-
-  /* .project-card {
-    background-color: #1a1a1a;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-  }
-
-  .project-card:hover {
-    box-shadow: 0 6px 20px rgba(26, 188, 156, 0.6);
-    transform: translateY(-3px);
-  } */
 }
