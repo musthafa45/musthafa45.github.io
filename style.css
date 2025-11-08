@@ -79,6 +79,7 @@ p {
 .text-content {
   flex: 1;
   min-width: 250px;
+  padding-right: 12px;  /* keeps all inner text away from the right edge */
 }
 
 /* ---------- Social Icons ---------- */
