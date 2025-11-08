@@ -499,9 +499,7 @@ footer {
   .card { padding: 16px; }
   h1 { font-size: 1.4rem; }
   p { font-size: 0.9rem; }
-  .icon-row {
-    padding: 0 24px; /* slightly more breathing room on small screens */
-  }
+
   .icon-row a { font-size: 1.3rem; }
   .project-card img { height: 120px; }
   .project-card h3 { font-size: 0.95rem; }
