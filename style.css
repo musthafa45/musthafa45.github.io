@@ -76,7 +76,6 @@ p {
   100% { background-position: 0% 50%; }
 }
 
-
 .text-content {
   flex: 1;
   min-width: 250px;
@@ -117,7 +116,7 @@ p {
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 12px solid #1abc9c; /* now points down */
+  border-top: 12px solid #ffffff; /* now points down */
   position: absolute;
   top: -6px; /* keep it above icons if you want */
   left: 0;
@@ -135,19 +134,18 @@ p {
   transform: scale(1.2);
 }
 
-
-/* Arrow Buttons & Start Button - consistent style */
+/* Arrow Buttons & Start Button - Grey/White Theme */
 .arrow-btn,
 .start-btn {
-  font-size: 1.1rem;           /* bigger text / symbols */
-  padding: 7px 14px;          /* larger clickable area */
+  font-size: 1.1rem;           
+  padding: 7px 14px;          
   font-family: 'Fira Code', monospace;
-  border: 2px solid #1abc9c;
+  border: 2px solid #ccc;          /* light grey border */
   border-radius: 4px;
-  background: #272626;
-  color: #1abc9c;
+  background: #333;                /* dark grey background */
+  color: #eee;                     /* text color */
   letter-spacing: 1px;
-  box-shadow: 0 0 0 2px #1abc9c, 0 4px 0 #0e8f7f; /* 3D effect */
+  box-shadow: 0 0 0 2px #ccc, 0 4px 0 #555; /* 3D effect: top border light, bottom shadow darker */
   cursor: pointer;
   text-transform: uppercase;
   transition: all 0.2s ease;
@@ -157,8 +155,8 @@ p {
 .arrow-btn:hover,
 .start-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 0 2px #1abc9c, 0 6px 0 #0e8f7f;
-  background: #111;
+  box-shadow: 0 0 0 2px #ccc, 0 6px 0 #555;
+  background: #222;                /* slightly darker on hover */
   color: #fff;
 }
 
@@ -166,13 +164,10 @@ p {
 .arrow-btn:active,
 .start-btn:active {
   transform: translateY(2px);
-  box-shadow: 0 0 0 2px #1abc9c, 0 2px 0 #0e8f7f;
-  background: #0e8f7f;
-  color: #111;
+  box-shadow: 0 0 0 2px #ccc, 0 2px 0 #555;
+  background: #555;                /* mid-grey when pressed */
+  color: #222;                     /* darker text on press */
 }
-
-
-
 
 /* Social Icon Colors */
 .fa-linkedin { color: #0077b5; }
@@ -194,7 +189,6 @@ p {
   transform: scale(1.05);
 }
 
-
 .itch-badge,
 .gplay-badge {
   height: 35px;
@@ -205,6 +199,51 @@ p {
 .gplay-badge:hover {
   transform: scale(1.05);
 }
+
+/* Tools Section */
+.tools-section {
+  background-color: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  margin-bottom: 40px;
+}
+
+.tools-section h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
+}
+
+.tool-item {
+  background: #ffffff15;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  padding: 12px 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.tool-item i {
+  margin-right: 8px;
+  color: #fff;
+}
+
+.tool-item:hover {
+  background: #ffffff25;
+  transform: translateY(-4px);
+}
+
 
 /* ---------- Projects Grid ---------- */
 .projects-grid {
@@ -221,17 +260,17 @@ p {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #1e1e1e;
+  background-color: #1e1e1e; /* dark grey base */
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* subtle shadow */
   transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
 }
 
 .project-card:hover {
   transform: translateY(-7px);
-  background-color: #252525;
-  box-shadow: 0 0 20px rgba(26, 188, 156, 0.5);
+  background-color: #2a2a2a; /* slightly lighter grey on hover */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* subtle white glow for hover */
 }
 
 .project-card .content {
@@ -339,6 +378,50 @@ p {
 .thumb-wrapper:hover .project-thumb {
   opacity: 0.6;
 }
+
+/* ---------- Languages Section ---------- */
+#languages {
+  margin-top: 60px;
+  text-align: left;
+}
+
+.languages-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.language-item {
+  background: rgba(255, 255, 255, 0.05); /* soft dark-grey feel */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #eee;
+  display: flex;
+  justify-content: space-between;
+  min-width: 180px;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.language-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2); /* subtle white glow */
+  background-color: rgba(255, 255, 255, 0.08); /* slightly lighter on hover */
+}
+
+.lang-name {
+  font-weight: 600;
+  color: #fff; /* white for consistency with grey/white theme */
+}
+
+.lang-level {
+  opacity: 0.8;
+  font-style: italic;
+  color: #ccc; /* softer white/grey for secondary text */
+}
+
+
 
 /* ---------- Footer ---------- */
 footer {

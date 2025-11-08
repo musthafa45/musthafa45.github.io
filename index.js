@@ -54,6 +54,5 @@ startBtn.addEventListener('click', () => {
 
 // Initialize pointer on page load
 window.addEventListener('load', updatePointer);
-window.addEventListener('resize', updatePointer);
-
+window.addEventListener('resize', updatePointer); // reposition if window changes
 
