@@ -91,7 +91,7 @@ p {
 .icon-row {
   display: flex;
   gap: 12px;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   flex-wrap: nowrap;              /* 🔥 prevent wrapping */
   overflow-x: auto;               /* 🔥 allows scrolling if needed */
