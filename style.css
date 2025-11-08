@@ -200,50 +200,53 @@ p {
   transform: scale(1.05);
 }
 
-/* Tools Section */
+/* Tools Section - Compact Version */
 .tools-section {
   background-color: #1e1e1e;
   color: #fff;
   text-align: center;
-  padding: 40px 20px;
-  border-radius: 16px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  margin-bottom: 40px;
+  padding: 20px 12px;       /* reduced padding */
+  border-radius: 12px;      /* slightly smaller corners */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15); /* lighter shadow */
+  margin-bottom: 20px;
 }
 
 .tools-section h1 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+  font-size: 1.2rem;        /* smaller heading */
+  margin-bottom: 16px;
   font-weight: 400;
 }
 
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* smaller min-width */
+  gap: 6px;                  /* tighter gap */
+  justify-content: center;    /* center grid items */
 }
 
 .tool-item {
   background: #ffffff15;
   border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 12px;
-  padding: 12px 8px;
-  font-size: 0.95rem;
+  border-radius: 10px;        /* slightly smaller corners */
+  padding: 6px 4px;           /* reduced padding */
+  font-size: 0.8rem;          /* smaller text */
   font-weight: 500;
   color: #fff;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tool-item i {
-  margin-right: 8px;
+  margin-right: 4px;           /* smaller icon spacing */
   color: #fff;
 }
 
 .tool-item:hover {
   background: #ffffff25;
-  transform: translateY(-4px);
+  transform: translateY(-2px); /* smaller hover movement */
 }
-
 
 /* ---------- Projects Grid ---------- */
 .projects-grid {
@@ -379,49 +382,48 @@ p {
   opacity: 0.6;
 }
 
-/* ---------- Languages Section ---------- */
+/* ---------- Languages Section (Compact) ---------- */
 #languages {
-  margin-top: 60px;
+  margin-top: 40px;          /* reduced margin */
   text-align: left;
 }
 
 .languages-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 8px;                  /* tighter spacing */
+  justify-content: center;    /* center items for smaller width */
 }
 
 .language-item {
-  background: rgba(255, 255, 255, 0.05); /* soft dark-grey feel */
+  background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 10px 14px;
+  padding: 6px 8px;           /* reduced padding */
   border-radius: 6px;
-  font-size: 1rem;
+  font-size: 0.85rem;          /* smaller text */
   color: #eee;
   display: flex;
   justify-content: space-between;
-  min-width: 180px;
-  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  min-width: 120px;            /* reduced min-width */
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
 }
 
 .language-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2); /* subtle white glow */
-  background-color: rgba(255, 255, 255, 0.08); /* slightly lighter on hover */
+  transform: scale(1.03);      /* smaller hover scale */
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.15); /* lighter glow */
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 .lang-name {
   font-weight: 600;
-  color: #fff; /* white for consistency with grey/white theme */
+  color: #fff;
 }
 
 .lang-level {
   opacity: 0.8;
   font-style: italic;
-  color: #ccc; /* softer white/grey for secondary text */
+  color: #ccc;
 }
-
-
 
 /* ---------- Footer ---------- */
 footer {
