@@ -94,15 +94,11 @@ p {
   gap: 12px;
   justify-content: left;
   align-items: center;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-
-  padding: 0 4px; /* ✅ adds equal left & right spacing */
-  box-sizing: border-box; /* ensures padding doesn’t break layout */
+  flex-wrap: nowrap;              /* 🔥 prevent wrapping */
+  overflow-x: auto;               /* 🔥 allows scrolling if needed */
+  scrollbar-width: none;          /* hide scrollbar in Firefox */
+  -ms-overflow-style: none;       /* hide scrollbar in IE/Edge */
 }
-
 
 .icon-row::-webkit-scrollbar {
   display: none;                  /* hide scrollbar in Chrome/Safari */
@@ -499,13 +495,12 @@ footer {
   .card { padding: 16px; }
   h1 { font-size: 1.4rem; }
   p { font-size: 0.9rem; }
-
   .icon-row a { font-size: 1.3rem; }
   .project-card img { height: 120px; }
   .project-card h3 { font-size: 0.95rem; }
   .project-card p { font-size: 0.85rem; }
   .project-card a { font-size: 0.9rem; }
- 
+
   .project-card {
     background-color: #1a1a1a;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
