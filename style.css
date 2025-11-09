@@ -157,6 +157,12 @@ p {
   padding: 0; /* remove default padding */
 }
 
+.start-btn {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px; /* slightly reduced letter spacing */
+}
+
+
 /* Hover */
 .arrow-btn:hover,
 .start-btn:hover {
@@ -245,9 +251,11 @@ p {
 }
 
 .tools-section h1 {
-  font-size: 1rem;         /* small heading */
+  font-size: 1.6rem;         /* small heading */
   margin-bottom: 12px;
-  font-weight: 400;
+  font-weight: 600;
+  text-align: left;
+  padding-left:  8px;    /* align with tools grid */
 }
 
 .tools-grid {
@@ -416,36 +424,59 @@ p {
   opacity: 0.6;
 }
 
-/* ---------- Languages Section - Ultra Compact ---------- */
+/* ---------- Languages Section (Card Style) ---------- */
 #languages {
-  margin-top: 20px;           /* smaller margin */
-  text-align: left;
+  background-color: #1e1e1e;           /* same as tools section */
+  color: #fff;
+  text-align: center;
+  padding: 20px 12px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  margin-top: 40px;
+  margin-bottom: 20px;
+  max-width: 100%;                    /* keeps it card-sized */
+  margin-inline: auto;              /* center horizontally */
+}
+
+#languages .section-title {
+ text-align: left;
+  width: 100%;
+  margin-left: 12px; /* small visual offset */
+  font-weight: 600;
+}
+
+#languages h2 {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  font-weight: 400;
 }
 
 .languages-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;                   /* tighter spacing */
-  justify-content: center;     /* center items */
+  gap: 8px;
+  justify-content: left;
 }
 
 .language-item {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 4px 6px;           /* very small padding */
-  border-radius: 4px;          /* smaller corners */
-  font-size: 0.75rem;          /* smaller text */
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 0.85rem;
   color: #eee;
   display: flex;
   justify-content: space-between;
-  min-width: 100px;            /* reduced min-width */
-  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+  align-items: center;
+  min-width: 140px;
+  max-width: 200px;
+  transition: all 0.25s ease;
 }
 
 .language-item:hover {
-  transform: scale(1.02);      /* subtle hover scale */
-  box-shadow: 0 0 4px rgba(255, 255, 255, 0.15); /* subtle glow */
-  background-color: rgba(255, 255, 255, 0.08);
+  transform: translateY(-3px);
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.12);
 }
 
 .lang-name {
@@ -454,11 +485,11 @@ p {
 }
 
 .lang-level {
-  opacity: 0.8;
+  opacity: 0.85;
   font-style: italic;
   color: #ccc;
-  font-size: 0.7rem;            /* smaller secondary text */
 }
+
 
 /* ---------- Footer ---------- */
 footer {
