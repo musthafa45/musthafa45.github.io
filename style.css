@@ -236,7 +236,7 @@ p {
 
 .itch-badge:hover,
 .gplay-badge:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 /* Tools Section - Ultra Compact */
@@ -604,10 +604,18 @@ footer {
   margin-bottom: 8px;
 }
 
+.icon-row-availability {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
 /* Headings */
 .card h3 {
   margin-top: 30px;
-  color: #1abc9c;
+  color: #ffffff;
 }
 
 /* ---------- Responsive ---------- */
