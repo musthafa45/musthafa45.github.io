@@ -481,13 +481,14 @@ p {
   text-align: center;
   padding: 20px 12px;
   border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
   margin-top: 40px;
   margin-bottom: 20px;
   max-width: 100%;                    /* keeps it card-sized */
   margin-inline: auto;              /* center horizontally */
-  background: #151a2d;
+  
   box-shadow: 0 0 15px rgba(255, 209, 102, 0.2);
+  background: rgba(0, 255, 200, 0.05);
+  border: 1px solid rgba(0, 255, 200, 0.3);
 }
 
 #languages .section-title {
@@ -511,8 +512,8 @@ p {
 }
 
 .language-item {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 255, 200, 0.05);
+  border: 1px solid rgba(0, 255, 200, 0.3);
   padding: 8px 10px;
   border-radius: 8px;
   font-size: 0.85rem;
