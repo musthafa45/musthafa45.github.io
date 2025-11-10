@@ -103,6 +103,14 @@ p {
   min-width: 250px;
 }
 
+.highlight {
+  color: #00ffc8;       /* brighter/contrast color */
+  font-weight: 700;     /* bold */
+  background: rgba(0, 255, 200, 0.1); /* subtle highlight */
+  padding: 2px 4px;
+  border-radius: 4px;   /* optional rounded edges */
+}
+
 /* ---------- Social Icons ---------- */
 
 .game-menu {
