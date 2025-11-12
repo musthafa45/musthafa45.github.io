@@ -98,9 +98,25 @@ p {
   to   { box-shadow: 0 0 20px var(--accent-glow), 0 0 40px var(--accent-glow); }
 }
 
+.subtitle {
+  font-family: 'Fira Code', monospace;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #b0b0b0;
+  margin-top: -10px;  /* brings it closer to your name */
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+}
+
+h3.subtitle {
+  margin-top: -12px !important; /* forces it to override */
+  margin-bottom: 8px;
+  line-height: 1.1; /* optional: tighter line spacing */
+}
+
 .text-content {
   flex: 1;
-  min-width: 250px;
+  min-width: 240px;
 }
 
 .highlight {
@@ -109,6 +125,10 @@ p {
   background: rgba(0, 255, 200, 0.1); /* subtle highlight */
   padding: 2px 4px;
   border-radius: 4px;   /* optional rounded edges */
+}
+.special-Text {
+  color: #ffffff;       /* distinct color */
+  font-weight: 600;     /* semi-bold */
 }
 
 /* ---------- Social Icons ---------- */
