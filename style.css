@@ -706,6 +706,7 @@ footer {
     align-items: center;
     text-align: center;
   }
+
   .profile-pic { width: 120px; height: 120px; }
   .project-card h3 { font-size: 1rem; }
   .project-card p { font-size: 0.9rem; }
@@ -723,7 +724,6 @@ footer {
   h1 { font-size: 1.4rem; }
   p { font-size: 0.9rem; }
   .icon-row a { font-size: 1.3rem; }
-  .project-card img { height: 120px; }
   .project-card h3 { font-size: 0.95rem; }
   .project-card p { font-size: 0.85rem; }
   .project-card a { font-size: 0.9rem; }
