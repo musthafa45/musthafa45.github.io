@@ -289,36 +289,36 @@ h3.subtitle {
   transform: scale(1.1);
 }
 
-/* Tools Section - Ultra Compact */
+/* ---------- Tools Section ---------- */
 .tools-section {
   color: #fff;
   text-align: center;
-  padding: 12px 8px;       /* very small padding */
-  border-radius: 8px;      /* smaller corners */
+  padding: 12px 8px;       
+  border-radius: 8px;      
   margin-bottom: 16px;
   background-color: #151a2d;
   box-shadow: 0 0 20px rgba(0, 255, 200, 0.1);
 }
 
 .tools-section h1 {
-  font-size: 1.6rem;         /* small heading */
+  font-size: 1.6rem;         
   margin-bottom: 12px;
   font-weight: 600;
   text-align: left;
-  padding-left:  8px;    /* align with tools grid */
+  padding-left:  8px;    
 }
 
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* smaller min-width */
-  gap: 4px;                 /* tighter gap */
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px; 
   justify-content: center;
 }
 
 .tool-item {
-  border-radius: 8px;       /* smaller corners */
-  padding: 4px 2px;         /* very compact padding */
-  font-size: 0.7rem;        /* smaller text */
+  border-radius: 10px;      
+  padding: 12px 10px;       
+  font-size: 1rem;        
   font-weight: 500;
   color: #fff;
   transition: all 0.2s ease;
@@ -327,11 +327,14 @@ h3.subtitle {
   justify-content: center;
   background: rgba(0, 255, 200, 0.05);
   border: 1px solid rgba(0, 255, 200, 0.3);
+  gap: 6px;
+  white-space: normal;
+  text-align: center;
 }
 
 .tool-item i {
-  margin-right: 2px;        /* minimal icon spacing */
-  font-size: 0.8rem;        /* smaller icon */
+  margin-right: 2px;        
+  font-size: 1.2rem;        
   color: #fff;
 }
 
