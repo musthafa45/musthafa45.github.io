@@ -731,3 +731,35 @@ footer {
   .project-card p { font-size: 0.85rem; }
   .project-card a { font-size: 0.9rem; }
 }
+
+/* ------ Mobile Compact Mode ------ */
+@media (max-width: 600px) {
+
+  .tools-section {
+    padding: 10px 6px;
+    margin-bottom: 12px;
+  }
+
+  .tools-section h1 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    padding-left: 4px;
+  }
+
+  .tools-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* smaller items */
+    gap: 8px;
+  }
+
+  .tool-item {
+    padding: 10px 8px;      /* reduced padding */
+    font-size: 0.85rem;     /* smaller text */
+    border-radius: 8px;
+    gap: 4px;
+  }
+
+  .tool-item i {
+    font-size: 1rem;        /* smaller icon */
+    margin-right: 1px;
+  }
+}
