@@ -268,7 +268,7 @@ h3.subtitle {
 .fa-discord { color: #7289da; }
 .fa-globe { color: #1abc9c; }
 .fa-file-download { color: #20c223; }
-
+/* ---------- Badge Styles ---------- */
 .gplay-badge {
   height: 35px;
   transition: transform 0.2s ease;
